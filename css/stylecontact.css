@@ -105,7 +105,7 @@ a:focus {
     max-height: 60px;
 }
 
-.top-bar .top-bar-item {
+.top-bar .top-bar- {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1956,7 +1956,8 @@ a:focus {
 .contact {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+
+    padding: 10px;
 }
 
 .contact .col-md-6 {

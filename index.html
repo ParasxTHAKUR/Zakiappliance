@@ -56,6 +56,7 @@
     border: 0px;
  
 }
+
 button#input_2 {
     background: #fff;
     color: #000;
@@ -140,10 +141,14 @@ section.ftco-section.ftco-no-pt.ftco-no-pb.ftco-services-2 {
   background-color: #333;
   overflow: hidden;
   margin-top: 30px;
-  display: flex;
-  justify-content: center;
+ 
 }
-
+@media (min-width: 720px) {
+   .topnav{
+    display: flex;
+  justify-content: center;
+   }
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -157,13 +162,13 @@ section.ftco-section.ftco-no-pt.ftco-no-pb.ftco-services-2 {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: hsl(20, 100%, 46%);
+  background-color: hsl(20, 97%, 72%);
 
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: hsl(20, 100%, 55%);
   color: white;
 }
 
@@ -193,11 +198,12 @@ section.ftco-section.ftco-no-pt.ftco-no-pb.ftco-services-2 {
     text-align: left;
   }
 }
-.logo-repair{
-  font-size: 20px;
-}
+
 .logo-text{
   font-size: 30px;
+}
+.about_{
+  padding: 0px;
 }
 </style>
 
@@ -216,7 +222,14 @@ section.ftco-section.ftco-no-pt.ftco-no-pb.ftco-services-2 {
 </div>
 <div class="col-md-4 d-flex topper mb-md-0 align-items-right">
 <div class="text pl-3 pl-md-3">
-<p class="hr"><span><h4><i class="fa fa-phone" aria-hidden="true"></i>Call Us Now: (202) 468-3289</h4>
+ 
+    <div class="web_banner">
+        <div class="banner-wrapper">
+            <div class="banner-wrapper-inner">
+                <h2><a href="tel:7037058079"><i class="fa fa-phone-square" aria-hidden="true"></i>(202) 468-3289</a></h2>
+            </div>
+        </div>
+</div>
 </span></p>
 </div>
 </div>
@@ -323,8 +336,8 @@ section.ftco-section.ftco-no-pt.ftco-no-pb.ftco-services-2 {
 <section class="ftco-section" id="about-section">
 <div class="container">
 <div class="row">
-<div class="col-md-6 d-flex align-items-stretch">
-<div class="about-wrap img w-100" style="background-image: url(images/about.webp);">
+<div class="col-md-6 d-flex align-items-stretch about_">
+<div class="about-wrap img w-100" style="background-image: url(images/about_.jpg);">
 </div>
 </div>
 <div class="col-md-6 py-5 pl-md-5">
@@ -352,17 +365,7 @@ repairs and prolong the lifespan of appliances.</p>
 </div>
 </div>
 <div class="row">
-<div class="col-md-4">
-<div class="services-wrap ftco-animate">
-<div class="img" style="background-image: url(images/fridge-repair.jpg);"></div>
-<div class="text">
-<div class="icon"><span class="flaticon-worker1"><img src="images/frd.png"></span></div>
-<h2>Refrigerator </h2>
-<p>Refrigerator repair involves troubleshooting and fixing issues with the appliance to restore its functionality., </p>
-<a href="#" class="btn-custom">Read more</a>
-</div>
-</div>
-</div>
+
 <div class="col-md-4">
 <div class="services-wrap ftco-animate">
 <div class="img" style="background-image: url(images/wash.jpg);"></div>
@@ -370,10 +373,11 @@ repairs and prolong the lifespan of appliances.</p>
 <div class="icon"><span class="flaticon-worker1"><img src="images/washr.jpeg"></span></div>
 <h2>Washer</h2>
 <p>Washer repair involves troubleshooting and fixing issues with washing machines to restore their functionality.</p>
-<a href="#" class="btn-custom">Read more</a>
+<a href="washer.html" class="btn-custom">Read more</a>
 </div>
 </div>
 </div>
+
 <div class="col-md-4">
 <div class="services-wrap ftco-animate">
 <div class="img" style="background-image: url(images/dry1.jpg);"></div>
@@ -381,7 +385,7 @@ repairs and prolong the lifespan of appliances.</p>
 <div class="icon"><span class="flaticon-worker1"><img src="images/dry12.jpeg"></span></div>
 <h2>Dryer </h2>
 <p>Dryer repair involves identifying and fixing issues with clothes dryers to restore their functionalit</p>
-<a href="#" class="btn-custom">Read more</a>
+<a href="dryer.html" class="btn-custom">Read more</a>
 </div>
 </div>
 </div>
@@ -392,7 +396,7 @@ repairs and prolong the lifespan of appliances.</p>
 <div class="icon"><span class="flaticon-worker1"><img src="images/ranger1.png"></span></div>
 <h2>Range Oven</h2>
 <p>Range oven repair involves identifying and fixing issues with cooking ranges to restore their functionality. </p>
-<a href="#" class="btn-custom">Read more</a>
+<a href="rangeoven.html" class="btn-custom">Read more</a>
 </div>
 </div>
 </div>
@@ -403,22 +407,33 @@ repairs and prolong the lifespan of appliances.</p>
 <div class="icon"><span class="flaticon-worker1"><img src="images/dishr12.jpg"></span></div>
 <h2>Dishwasher</h2>
 <p>Dishwasher repair involves identifying and fixing issues with dishwashing machines to restore their functionalit</p>
-<a href="#" class="btn-custom">Read more</a>
+<a href="dishwasher.html" class="btn-custom">Read more</a>
 </div>
 </div>
+</div>
+
+<div class="col-md-4">
+  <div class="services-wrap ftco-animate">
+  <div class="img" style="background-image: url(images/fridge-repair.jpg);"></div>
+  <div class="text">
+  <div class="icon"><span class="flaticon-worker1"><img src="images/ref-logo.avif"></span></div>
+  <h2>Refrigerator</h2>
+  <p>Refrigerator repair involves troubleshooting and fixing issues with the appliance to restore its functionality.,</p>
+  <a href="refrigrator.html" class="btn-custom">Read more</a>
+  </div>
+  </div>
 </div>
 <div class="col-md-4">
-<div class="services-wrap ftco-animate">
-<div class="img" style="background-image: url(images/alr.jpg);"></div>
-<div class="text">
-<div class="icon"><span class="flaticon-worker1"><img src="images/rep1.jpeg"></span></div>
-<h2>All Appliances</h2>
-<p>Appliance repair involves troubleshooting and fixing issues with various household appliances to restore their functionality</p>
-<a href="#" class="btn-custom">Read more</a>
-</div>
-</div>
-</div>
-</div>
+  <div class="services-wrap ftco-animate">
+  <div class="img" style="background-image: url(images/alr.jpg);"></div>
+  <div class="text">
+  <div class="icon"><span class="flaticon-worker1"><img src="images/rep1.jpeg"></span></div>
+  <h2>Contact Us</h2>
+  <p>Appliance repair involves troubleshooting and fixing issues with various household appliances to restore their functionality</p>
+  <a href="contact.html" class="btn-custom">Read more</a>
+  </div>
+  </div>
+  </div>
 </div>
 </section>
 <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter">
@@ -873,10 +888,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Form","t
                         </div>
                     </div>
                 </div>
-            </div>
-			
-			
-      
+            </div>  
 <section class="ftco-section ftco-no-pt ftco-no-pb testimony-section img">
 <div class="overlay"></div>
 <div class="container">
@@ -1186,5 +1198,35 @@ Copyright@ 2023
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a3a6b62ab338572","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}' crossorigin="anonymous"></script>
+<script  type="text/javascript">
+  const navLinkEls = document.querySelectorAll('.nav-link');
+  const windowPathname = window.location.pathname;
+
+  navLinkEls.forEach(navLinkEl => {
+    if(navLinkEl.href.includes(windowPathname)){
+      navLinkEl.classList.add("active");
+    }
+  });
+</script>
+<script>
+  function toggleMenu() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+<script>
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+  </script>
 </body>
 </html>

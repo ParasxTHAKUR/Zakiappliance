@@ -3170,7 +3170,10 @@ h5,
         margin-right: 0;
     }
 }
-
+.ref-banner{
+    height: 500px;
+    width: 100%;
+}
 .about {
     margin-bottom: 20px;
 }
@@ -3209,7 +3212,7 @@ h5,
 
 .services-wrap {
     margin-bottom: 40px;
-    padding: 20px;
+    padding-bottom: 50px;
     border-radius: 3px;
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;

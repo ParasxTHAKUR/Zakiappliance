@@ -328,7 +328,7 @@ a:focus {
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 0;
-    transition: .3s;
+    transition: .1s;
 }
 
 .carousel .carousel-caption .btn:hover {
@@ -601,7 +601,8 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+   
+    
 }
 
 .about .section-header {

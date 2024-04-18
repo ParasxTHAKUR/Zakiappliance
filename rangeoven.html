@@ -43,13 +43,19 @@ body {
 }
 .about .section-header {
     margin-bottom: 30px;
-    margin-top: 11%;
+    margin-top: 5%;
     color: #000;
 }
 .panel-default>.panel-heading {
     color: #fff;
     background-color: #e78200;
 
+}
+@media (min-width: 720px) {
+   .topnav{
+    display: flex;
+  justify-content: center;
+   }
 }
 .contact .col-md-6:last-child {
     background: #1763a1;
@@ -160,6 +166,7 @@ input#input_5  , input#input_6 ,  input#input_7 ,  input#input_8 , input#input_1
   background-color: #333;
   overflow: hidden;
   margin-top: 30px;
+  
 }
 
 /* Style the links inside the navigation bar */
@@ -175,16 +182,24 @@ input#input_5  , input#input_6 ,  input#input_7 ,  input#input_8 , input#input_1
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+  background-color: hsl(20, 97%, 72%);
 
+}
+.logo-text{
+  font-size: 30px;
+}
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: hsl(20, 100%, 55%);
   color: white;
 }
 
+.logo-repair{
+  font-size: 20px;
+}
+.logo-text{
+  font-size: 30px;
+}
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
@@ -211,6 +226,29 @@ input#input_5  , input#input_6 ,  input#input_7 ,  input#input_8 , input#input_1
     text-align: left;
   }
 }
+.list-container div {
+        display: flex;
+        flex-wrap: wrap;
+justify-content: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .list-container div p {
+width: 400px;
+margin: 10px;
+        background-color: #fff;
+        padding: 15px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+    }
+
+    .list-container div p:hover {
+        background-color: #f0f0f0;
+
+    }
 </style>
  </head>
 <body>
@@ -221,13 +259,16 @@ input#input_5  , input#input_6 ,  input#input_7 ,  input#input_8 , input#input_1
 <a class="navbar-brand d-flex align-items-center" href="index.html">
 
 <div class="logo" style="background-image: url('images/tool.jpg');height:100px;width:150px;"> </div>
-<span class="ml-2">ZAKI <small>APPLIANCE REPAIR SERVICES</small></span>
+<span class="ml-2 logo-text">ZAKI <small>APPLIANCE REPAIR SERVICES</small></span>
 </a>
 </div>
 <div class="col-md-4 d-flex topper mb-md-0 align-items-right">
-<div class="text pl-3 pl-md-3">
-<p class="hr"><span><h4><i class="fa fa-phone" aria-hidden="true"></i>Call Us Now: (202) 468-3289</h4>
-</span></p>
+    <div class="web_banner">
+        <div class="banner-wrapper">
+            <div class="banner-wrapper-inner">
+                <h2><a href="tel:7037058079"><i class="fa fa-phone-square" aria-hidden="true"></i>(202) 468-3289</a></h2>
+            </div>
+        </div>
 </div>
 </div>
 </div>
@@ -251,6 +292,9 @@ input#input_5  , input#input_6 ,  input#input_7 ,  input#input_8 , input#input_1
                     <div class="row align-items-center">
 
                         <div class="col-lg-12">
+                            <div class="img-container">
+                                <img alt="ref-banner" class="ref-banner" src="./images/RangeBanner.jpg"/>
+                                                            </div>
                             <div class="section-header text-center">
                                <h1 >Range Oven Repair</h1>
                                 <h3>We have many years of Experience in Range Oven Repair</h3>
@@ -338,102 +382,444 @@ input#input_5  , input#input_6 ,  input#input_7 ,  input#input_8 , input#input_1
                     </div>
                 </div>
             </div>
-            
-            
-                                    
+                        
             <div class="faqs">
                 <div class="container">
                     <div class="section-header text-center">
-                        <p>Frequently Asked Question</p>
-                        <h2>You May Ask</h2>
+           
+                        <h2>Most Common Range Oven Issues</h2>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-						  <div class="panel-group" id="accordion">
-                               <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                  <h4 class="panel-title">
-                                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-						                       What are the most common problems that require range oven repair?
-			                  	 </a>
-                                 </h4>
-                              </div>		
-				                <div id="collapseOne" class="panel-collapse collapse">
-                                     <div class="panel-body">
-                                          Some of the most common problems that require range oven 
-											repair include malfunctioning
-											heating elements, faulty thermostats, 
-											damaged door seals, and broken burners.
-                                     </div>
-                                   </div>	
-						         </div>		
-                                <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                       Can I repair my range oven myself?
-                                          </a>
-                                    </h4>
-                                     </div>
-                           <div id="collapseTwo" class="panel-collapse collapse">
-                               <div class="panel-body">
-                   
-				                             Range oven repair can be complex and requires specialized knowledge,
-										   skills, and tools. It's recommended to hire a qualified
-										   technician with experience in repairing the specific 
-										   brand and model of your range oven to avoid further 
-										   damage or injury.
-                                   </div>
-                            </div>
-                           </div>
-						 </div>		
-						 </div> 
-						       <div class="col-md-6">
-						  <div class="panel-group" id="accordion">
-                               <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                  <h4 class="panel-title">
-                                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsethree">
-						                                            How long does range oven repair take?
-			                  	 </a>
-                                 </h4>
-                              </div>		
-				                <div id="collapsethree" class="panel-collapse collapse">
-                                     <div class="panel-body">
-                                     
-				                       The time it takes to repair a range oven depends on the
-											nature and extent of the problem. Minor repairs may 
-											take a few hours, while more complex issues may take 
-											a few days to complete.
-                                     </div>
-                                   </div>	
-						         </div>		
-                                <div class="panel panel-default">
-                                 <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapsefour">
-                                         How much does range oven repair cost?
-                                          </a>
-                                    </h4>
-                                     </div>
-                           <div id="collapsefour" class="panel-collapse collapse">
-                               <div class="panel-body">
-                          The cost of range oven repair varies depending on the nature 
-											and extent of the problem, as well as the technician's 
-											fees and the cost of any necessary parts.
-											It's recommended to obtain a written estimate from a 
-											qualified technician before proceeding with the repairs.
-                                   </div>
-                            </div>
-                           </div>
-						 </div>		
-						 </div> 
-
+                    <div class="list-container">
+                        <div>
+                            <p>BreakDown on switch or receptacles</p>
+                            <p>Stovetop won't heat up.</p>
+                            <p>Burner's won't ignite/making cpcking noise.</p>
+                            <p>Oven won't turn on.</p>
+                            <p>Oven won't heat at all.</p>
+                            <p>Oven door won't open/shut.</p>
+                            <p>Oven won't self clean.</p>
+                            <p>Oven lights is not coming on.</p>
+                            <p>Oven showing error message.</p>
+                        </div>
                     </div>
                 </div>
             </div> 
        
- 
+     
+            <div class="contact wow fadeInUp">
+                <div class="container">
+                    <div class="section-header text-center">
+                        <p>Get In Touch</p>
+                        <h2>For Any Query</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-info">
+                                <div class="contact-item">
+                                    <i class="flaticon-address"></i>
+                                    <div class="contact-text">
+                                        <h2>Location</h2>
+                                        <p>123 Street, New York, USA</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-call"></i>
+                                    <div class="contact-text">
+                                        <h2>Phone</h2>
+                                        <p>+012 345 67890</p>
+                                    </div>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="flaticon-send-mail"></i>
+                                    <div class="contact-text">
+                                        <h2>Email</h2>
+                                        <p>info@example.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div class="col-md-6">
+                            <div class="contact-form">
+                                <div id="success"></div>	
+<script src="https://cdn02.jotfor.ms/static/prototype.forms.js?3.3.43977" type="text/javascript"></script>
+<script src="https://cdn03.jotfor.ms/static/jotform.forms.js?3.3.43977" type="text/javascript"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.js"></script>
+<script src="https://cdn01.jotfor.ms/js/payments/validategateways.js?v=3.3.43977" type="text/javascript"></script>
+
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.newPaymentUI = true;
+	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+	window.addEventListener('DOMContentLoaded',function(){window.brandingFooter.init({"formID":232134819205047,"campaign":"powered_by_jotform_le","isCardForm":false,"isSmartPDFForm":false})});
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_5').setAttribute('tabindex',0);
+      setTimeout(function() {
+          $('input_5').hint('Your Name');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex',0);
+      setTimeout(function() {
+          $('input_6').hint('Your Address');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_7').setAttribute('tabindex',0);
+      setTimeout(function() {
+          $('input_7').hint('Your City');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_11').setAttribute('tabindex',0);
+      setTimeout(function() {
+          $('input_11').hint('Your ZipCode');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_12').setAttribute('tabindex',0);
+      setTimeout(function() {
+          $('input_12').hint('Your Phone Number');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_18').setAttribute('tabindex',0);
+      setTimeout(function() {
+          $('input_18').hint('Date');
+       }, 20);
+      setTimeout(function() {
+          $('input_16').hint('Your Email');
+       }, 20);
+if (window.JotForm && JotForm.accessible) $('input_17').setAttribute('tabindex',0);
+      setTimeout(function() {
+          $('input_17').hint('Nature of Service Requested');
+       }, 20);
+      JotForm.alterTexts(undefined);
+	/*INIT-END*/
+	});
+
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},null,null,{"description":"","name":"yourName","qid":"5","subLabel":"","text":"Your Name","type":"control_textbox"},{"description":"","name":"yourAddress","qid":"6","subLabel":"","text":"Your Address","type":"control_textbox"},{"description":"","name":"yourCity","qid":"7","subLabel":"","text":"Your City","type":"control_textbox"},{"description":"","name":"yourState","qid":"8","subLabel":"","text":"Your state","type":"control_dropdown"},null,null,{"description":"","name":"yourZipcode","qid":"11","subLabel":"","text":"Your ZipCode","type":"control_textbox"},{"description":"","name":"yourPhone","qid":"12","subLabel":"","text":"Your Phone Number","type":"control_textbox"},{"description":"","name":"brandName","qid":"13","subLabel":"","text":"Brand Name","type":"control_dropdown"},{"description":"","name":"yourAppliance","qid":"14","subLabel":"","text":"Your Appliance","type":"control_dropdown"},null,{"description":"","name":"email","qid":"16","subLabel":"","text":"Your Email","type":"control_email"},{"description":"","name":"natureOf","qid":"17","subLabel":"","text":"Nature of Service Requested","type":"control_textbox"},{"description":"","name":"typeA","qid":"18","subLabel":"","text":"Date","type":"control_textbox"}]);}, 20); 
+</script>
+
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=3.3.43977"/>
+<link type="text/css" rel="stylesheet" href="https://cdn02.jotfor.ms/css/styles/payment/payment_styles.css?3.3.43977" />
+<link type="text/css" rel="stylesheet" href="https://cdn03.jotfor.ms/css/styles/payment/payment_feature.css?3.3.43977" />
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/stylebuilder/donationBox.css?v=3.3.43977">
+
+
+<form class="jotform-form" action="https://submit.jotform.com/submit/232134819205047" method="post" name="form_232134819205047" id="232134819205047" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="232134819205047" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section">
+      <li class="form-line" data-type="control_textbox" id="id_5">
+	  <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5"> Your Name </label>
+        <div id="cid_5" class="form-input-wide" data-layout="full"> 
+		<input type="text" id="input_5" name="q5_yourName" data-type="input-textbox" class="form-textbox" data-defaultvalue=""  value="" placeholder="Your Name" data-component="textbox" aria-labelledby="label_5" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_6"><label class="form-label form-label-top form-label-auto" id="label_6" for="input_6"> Your Address </label>
+        <div id="cid_6" class="form-input-wide" data-layout="full"> <input type="text" id="input_6" name="q6_yourAddress"
+		data-type="input-textbox" class="form-textbox" data-defaultvalue=""  value="" placeholder="Your Address" data-component="textbox" aria-labelledby="label_6" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_7"><label class="form-label form-label-top form-label-auto" id="label_7" for="input_7"> Your City </label>
+        <div id="cid_7" class="form-input-wide" data-layout="full"> <input type="text" id="input_7" name="q7_yourCity" data-type="input-textbox" class="form-textbox" data-defaultvalue=""  value="" placeholder="Your City" data-component="textbox" aria-labelledby="label_7" /> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_8"><label class="form-label form-label-top form-label-auto" id="label_8" for="input_8"> Your state </label>
+        <div id="cid_8" class="form-input-wide" data-layout="full"> <select class="form-dropdown" id="input_8" name="q8_yourState"data-component="dropdown" aria-label="Your state">
+            <option value="">Please Select</option>
+            <option selected="" value="Washinton DC">Washinton DC</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Virginia">Virginia</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_11"><label class="form-label form-label-top form-label-auto" id="label_11" for="input_11"> Your ZipCode </label>
+        <div id="cid_11" class="form-input-wide" data-layout="full"> <input type="text" id="input_11" name="q11_yourZipcode" data-type="input-textbox" class="form-textbox" data-defaultvalue=""  value="" placeholder="Your ZipCode" data-component="textbox" aria-labelledby="label_11" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_12"><label class="form-label form-label-top form-label-auto" id="label_12" for="input_12"> Your Phone Number </label>
+        <div id="cid_12" class="form-input-wide" data-layout="full"> <input type="text" id="input_12" name="q12_yourPhone" data-type="input-textbox" class="form-textbox" data-defaultvalue=""  value="" placeholder="Your Phone Number" data-component="textbox" aria-labelledby="label_12" /> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_13"><label class="form-label form-label-top form-label-auto" id="label_13" for="input_13"> Brand Name </label>
+        <div id="cid_13" class="form-input-wide" data-layout="full"> <select class="form-dropdown" id="input_13" name="q13_brandName"  data-component="dropdown" aria-label="Brand Name">
+            <option value="">Please Select</option>
+            <option selected="" value="Admiral">Admiral</option>
+            <option value="Amana">Amana</option>
+            <option value="Asko">Asko</option>
+            <option value="Bosch">Bosch</option>
+            <option value="Caloric">Caloric</option>
+            <option value="Dacor">Dacor</option>
+            <option value="Frigidaire">Frigidaire</option>
+            <option value="GE">GE</option>
+            <option value="GE Monogram">GE Monogram</option>
+            <option value="GE Profile">GE Profile</option>
+            <option value="Hotpoint">Hotpoint</option>
+            <option value="Insinkerator">Insinkerator</option>
+            <option value="Jenn-Aire">Jenn-Aire</option>
+            <option value="Kitchen Aid">Kitchen Aid</option>
+            <option value="Kenmore">Kenmore</option>
+            <option value="LG">LG</option>
+            <option value="Magic Chef">Magic Chef</option>
+            <option value="Maytag">Maytag</option>
+            <option value="Roper">Roper</option>
+            <option value="Samsung">Samsung</option>
+            <option value="Sears">Sears</option>
+            <option value="Sub Zero">Sub Zero</option>
+            <option value="Tappan">Tappan</option>
+            <option value="Thermadore">Thermadore</option>
+            <option value="U-Line">U-Line</option>
+            <option value="Viking">Viking</option>
+            <option value="Westinghouse">Westinghouse</option>
+            <option value="Whirlpool">Whirlpool</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_dropdown" id="id_14"><label class="form-label form-label-top form-label-auto" id="label_14" for="input_14"> Your Appliance </label>
+        <div id="cid_14" class="form-input-wide" data-layout="full"> <select class="form-dropdown" id="input_14" name="q14_yourAppliance"  data-component="dropdown" aria-label="Your Appliance">
+            <option value="">Please Select</option>
+            <option selected="" value="Refrigerators/Fridge">Refrigerators/Fridge</option>
+            <option value="Washers">Washers</option>
+            <option value="Dryers Electric">Dryers Electric</option>
+            <option value="Dryers Gas">Dryers Gas</option>
+            <option value="Ranges Electric">Ranges Electric</option>
+            <option value="Ranges Gas">Ranges Gas</option>
+            <option value="Wall Ovens Electric">Wall Ovens Electric</option>
+            <option value="Wall Ovens Gas">Wall Ovens Gas</option>
+            <option value="Cooktop Electric">Cooktop Electric</option>
+            <option value="Cooktop Gas">Cooktop Gas</option>
+            <option value="Microwaves">Microwaves</option>
+            <option value="Dishwashers">Dishwashers</option>
+            <option value="Disposals">Disposals</option>
+            <option value="Hoods">Hoods</option>
+            <option value="Water Heater Electric">Water Heater Electric</option>
+            <option value="Water Heater Gas">Water Heater Gas</option>
+            <option value="AC Unit">AC Unit</option>
+            <option value="Furnace">Furnace</option>
+            <option value="Thermostat">Thermostat</option>
+            <option value="Humidifier">Humidifier</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_18"><label class="form-label form-label-top form-label-auto" id="label_18" for="input_18"> Date </label>
+        <div id="cid_18" class="form-input-wide" data-layout="full"> <input type="text" id="input_18" name="q18_typeA" data-type="input-textbox" class="form-textbox" data-defaultvalue=""  value="" placeholder="Date" data-component="textbox" aria-labelledby="label_18" /> </div>
+      </li>
+      <li class="form-line" data-type="control_email" id="id_16"><label class="form-label form-label-top form-label-auto" id="label_16" for="input_16"> Your Email </label>
+        <div id="cid_16" class="form-input-wide" data-layout="full"> <input type="email" id="input_16" name="q16_email" class="form-textbox validate[Email]" data-defaultvalue="" " value="" placeholder="Your Email" data-component="email" aria-labelledby="label_16" /> </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_17"><label class="form-label form-label-top form-label-auto" id="label_17" for="input_17"> Nature of Service Requested </label>
+        <div id="cid_17" class="form-input-wide" data-layout="full"> <input type="text" id="input_17" name="q17_natureOf" data-type="input-textbox" class="form-textbox" data-defaultvalue=""  value="" placeholder="Nature of Service Requested" data-component="textbox" aria-labelledby="label_17" /> </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "new_footer";
+  </script>
+  <script>
+    JotForm.poweredByText = "Powered by Jotform";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="232134819205047" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='232134819205047'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "232134819205047-232134819205047";
+    }
+  </script>
+</form><script type="text/javascript">JotForm.ownerView=true;</script><script src="https://cdn.jotfor.ms//js/vendor/smoothscroll.min.js?v=3.3.43977"></script>
+<script src="https://cdn.jotfor.ms//js/errorNavigation.js?v=3.3.43977"></script>
+<script type="text/javascript">JotForm.isNewSACL=true;</script>
+
+                                                  
+							   <form action="#" method="POST" id="contactForm" style="display:none;">
+							       <input type="hidden" name="access_key" value="cee11e57-fe8b-49e2-b404-9ed0af4b7ad2">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                     <div class="control-group">
+                                        <input type="text" class="form-control" id="address" placeholder="Your Address" required="required" data-validation-required-message="Please enter your Address" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                     <div class="control-group">
+                                        <input type="text" class="form-control" id="city" placeholder="Your City" required="required" data-validation-required-message="Please enter your City" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <select class="form-control" id="state" placeholder="Your state" required="required" >
+                                        <option value="Washinton-DC">Washinton DC</option>
+                                        <option value="Maryland">Maryland</option>
+                                        <option value="Virginia">Virginia</option>
+                                        
+                                     </select>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                     <div class="control-group">
+                                        <input type="text" class="form-control" id="zipcode" placeholder="Your ZipCode" required="required" data-validation-required-message="Please enter your ZipCode" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="hphone" placeholder="Your Home Phone Number" required="required" data-validation-required-message="Please enter your Home Phone Number" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="phone" placeholder="Your Phone Number" required="required" data-validation-required-message="Please enter your Phone Number" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                     <div class="control-group">
+                                        
+                                        <select class="form-control"  name="brand_name" id="brand_name">
+                                                                        <option selected="selected" value="Please Select Brand Name">Admiral </option>
+                                         
+<option value="Amana">Amana</option>
+<option value="Asko">Asko</option>
+<option value="Bosch">Bosch</option>
+<option value="Caloric">Caloric</option>
+<option value="Dacor">Dacor</option>
+<option value="Frigidaire">Frigidaire</option>
+<option value="GE">GE</option>
+<option value="GE Monogram">GE Monogram</option>
+<option value="GE Profile">GE Profile</option>
+<option value="Hotpoint">Hotpoint</option>
+<option value="Insinkerator">Insinkerator</option>
+<option value="Jenn-Aire">Jenn-Aire</option>
+<option value="Kitchen Aid">Kitchen Aid</option>
+<option value="Kenmore">Kenmore</option>
+<option value="LG">LG</option>
+<option value="Magic Chef">Magic Chef</option>
+<option value="Maytag">Maytag</option>
+<option value="Roper">Roper</option>
+<option value="Samsung">Samsung</option>
+<option value="Sears">Sears</option>
+<option value="Sub Zero">Sub Zero</option>
+<option value="Tappan">Tappan</option>
+<option value="Thermadore">Thermadore</option>
+<option value="U-Line">U-Line</option>
+<option value="Viking">Viking</option>
+<option value="Westinghouse">Westinghouse</option>
+<option value="Whirlpool">Whirlpool</option></select>
+                                                                    <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="control-group">
+                                        
+                                        <select class="form-control"  name="appliance" id="appliance" >
+                                                                        <option selected="selected" value="Please Select One ">Refrigerators/Fridge </option>
+                                                                 
+<option value="Washers">Washers</option>
+<option value="Dryers Electric">Dryers Electric</option>
+<option value="Dryers Gas">Dryers Gas</option>
+<option value="Ranges Electric">Ranges Electric</option>
+<option value="Ranges Gas">Ranges Gas</option>
+<option value="Wall Ovens Electric">Wall Ovens Electric</option>
+<option value="Wall Ovens Gas">Wall Ovens Gas</option>
+<option value="Cooktop Electric">Cooktop Electric</option>
+<option value="Cooktop Gas">Cooktop Gas</option>
+<option value="Microwaves">Microwaves</option>
+<option value="Dishwashers">Dishwashers</option>
+<option value="Disposals">Disposals</option>
+<option value="Hoods">Hoods</option>
+<option value="Water Heater Electric">Water Heater Electric</option>
+<option value="Water Heater Gas">Water Heater Gas</option>
+<option value="AC Unit">AC Unit</option>
+<option value="Furnace">Furnace</option>
+<option value="Thermostat">Thermostat</option>
+<option value="Humidifier">Humidifier</option> 
+                                                                    </select>
+                                                                    <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="control-group">
+                                        
+                                        <select name="time" id="time" style="margin-left: 5px; width: 150px; color: #000;
+                                                                        border: 1px solid #979797;">
+                                                                        <option value="Time">Preferred Time</option>
+                                                                        <option value="8-11">8-11</option>
+                                                                        <option value="9-12">9-12</option>
+                                                                        <option value="10-1">10-1</option>
+                                                                        <option value="11-2">11-2</option>
+                                                                        <option value="12-3">12-3</option>
+                                                                        <option value="1-4">1-4</option>
+                                                                        <option value="2-5">2-5</option>
+                                                                        <option value="3-6">3-6</option>
+                                                                        <option value="4-7">4-7</option>
+                                                                        <option value="5-8">5-8</option>
+                                                                    </select>
+                                                                    <input style="width: 20px; margin-left: 10px; border: 1px solid #979797;" type="radio" name="ampm" value="AM" checked=""><label style="color:white;">AM</label>
+                                                                    <input style="width: 20px; margin-left: 10px; border: 1px solid #979797;" type="radio" name="ampm" value="PM"><label style="color:white;">PM</label>
+                                                                    <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="control-group">
+                                        
+                                        <select name="month" id="month" style="margin-left: 5px; width: 150px; border: 1px solid #979797;
+                                                                        color: #000;">
+                                                                        <option value="Month">Month</option>
+                                                                        <option value="January">January</option>
+                                                                        <option value="February">February</option>
+                                                                        <option value="March">March</option>
+                                                                        <option value="April">April</option>
+                                                                        <option value="May  ">May </option>
+                                                                        <option value="June  ">June </option>
+                                                                        <option value="July  ">July </option>
+                                                                        <option value="August  ">August </option>
+                                                                        <option value="September  ">September </option>
+                                                                        <option value="October  ">October </option>
+                                                                        <option value="November  ">November </option>
+                                                                        <option value="December  ">December </option>
+                                                                    </select>
+                                                                    <select name="date" id="date" style="margin-left: 5px; width: 120px; color: #000;
+                                                                        border: 1px solid #979797;">
+                                                                        <option value="Date">Date</option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                        <option value="4">4</option>
+                                                                        <option value="5">5</option>
+                                                                        <option value="6">6</option>
+                                                                        <option value="7">7</option>
+                                                                        <option value="8">8</option>
+                                                                        <option value="9">9</option>
+                                                                        <option value="10">10</option>
+                                                                        <option value="11">11</option>
+                                                                        <option value="12">12</option>
+                                                                        <option value="13">13</option>
+                                                                        <option value="14">14</option>
+                                                                        <option value="15">15</option>
+                                                                        <option value="16">16</option>
+                                                                        <option value="17">17</option>
+                                                                        <option value="18">18</option>
+                                                                        <option value="19">19</option>
+                                                                        <option value="20">20</option>
+                                                                        <option value="21">21</option>
+                                                                        <option value="22">22</option>
+                                                                        <option value="23">23</option>
+                                                                        <option value="24">24</option>
+                                                                        <option value="25">25</option>
+                                                                        <option value="26">26</option>
+                                                                        <option value="27">27</option>
+                                                                        <option value="28">28</option>
+                                                                        <option value="29">29</option>
+                                                                        <option value="30">30</option>
+                                                                        <option value="31">31</option>
+                                                                    </select>
+                                                                    <p class="help-block text-danger"></p>
+                                    </div>
+
+                                    <div class="control-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    
+                                    <div class="control-group">
+                                        <textarea class="form-control" id="service" placeholder="Nature of Service Requested" required="required" data-validation-required-message="Please enter your Service Requested"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div>
+									<input type="hidden" name="redirect" value="http://thebestappliancerepairinc.com/Zakiappliance_1/">
+                                        <button type="submit">Submit Form</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
 
 <footer class="ftco-footer">
 <div class="container mb-5 pb-4">
@@ -656,7 +1042,17 @@ Copyright@ 2023
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a3a6b62ab338572","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.2.0","si":100}' crossorigin="anonymous"></script>
-<script>
+<script  type="text/javascript">
+    const navLinkEls = document.querySelectorAll('.nav-link');
+    const windowPathname = window.location.pathname;
+  
+    navLinkEls.forEach(navLinkEl => {
+      if(navLinkEl.href.includes(windowPathname)){
+        navLinkEl.classList.add("active");
+      }
+    });
+  </script>
+  <script>
     function toggleMenu() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
